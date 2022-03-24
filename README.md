@@ -2,8 +2,6 @@
 
 #### what is this:
 
-TweetWorld
-
 An application used to show and filter data from own backend API REST based on users preference, built with React, Context API, JavaScript, and Tailwind CSS. Testing using Cypress
 
 ## Installation and Setup Instructions

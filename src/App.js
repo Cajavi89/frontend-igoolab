@@ -4,7 +4,6 @@ import { getAllUsersHandler } from './context/actions';
 import { useAppState, useAppDispatch} from './context/store'
 import User from './components/user'
 import Loader from './components/Loader'
-import UserNotFound from './components/UserNotFound';
 
 function App() {
   const state = useAppState();
