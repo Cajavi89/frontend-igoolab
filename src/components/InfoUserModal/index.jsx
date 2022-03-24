@@ -13,6 +13,7 @@ const InfoUserModal = ({openModal, setOpenModal, props, picture }) => {
               <button
                 className="w-7 h-7 transition-all hover:bg-slate-200"
                 onClick={() => setOpenModal(false)}
+                data-cy="button-close-modal"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
