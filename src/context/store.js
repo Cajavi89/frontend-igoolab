@@ -3,7 +3,7 @@ import React, { createContext, useReducer, useContext} from 'react'
 import {
   GET_ALL_USERS,
   // GET_ALL_POSTS,
-  // GET_RANDOM_USER_PICTURE,
+  GET_RANDOM_USER_PICTURE,
   // GET_ALL_USERS,
   SET_LOADING
 } from './constants'
@@ -16,7 +16,7 @@ const initialState = {
   users:[],
   currentUser:{},
   posts:[],
-  userPicture:null
+  userPicture:[]
 }
 
 function AppReducer(state, action){
@@ -31,6 +31,12 @@ function AppReducer(state, action){
       return{
         ...state,
         users:action.payload
+      }
+    }
+    case GET_RANDOM_USER_PICTURE: {
+      return {
+        ...state,
+        userPicture: action.payload
       }
     }
 
